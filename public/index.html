@@ -1,23 +1,101 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>CSS/HTML Workshop with Drivy</title>
-  </head>
-  <body>
-    <div id="car">
-      <input class="model" type="text" placeholder="Car model"/>
-      <input class="price-by-day" type="number" placeholder="Price by day"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
-    </div>
-    <div id="rental">
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Grayscale - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading"> Welcome at Drivy</h1> <br>
+                        <p class="intro-text"><h2>Rent the cars near you</h2>
+                            Cheaper, Closer and More convenient.</p>
+                        <a href="#formSection" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Form Section -->
+    <section id="formSection" class="container content-section text-center">
+
+  <div class="form-group" id="car">
+  	<div class="col-sm-12">
+	  	<div class="col-sm-offset-1 col-sm-3">
+	<input class="model" type="text" placeholder="Car model"/>
+ </div>
+  	<div class="col-sm-offset-1 col-sm-3">
+	<input class="price-by-day" type="number" placeholder="Price by day"/>
+ </div>
+	  	<div class="col-sm-offset-1 col-sm-3">
+	<input class="price-by-km" type="number" placeholder="Price by km"/>
+	 </div>
+ </div>
+</div>
+    <div id="rental" class="form-group">
+	<div class="col-sm-12">
+	<div class="col-sm-offset-1 col-sm-3">
       <input class="begin" type="date" placeholder="Rental begin date"/>
+	  </div>
+	  <div class="col-sm-offset-1 col-sm-3">
       <input class="end" type="date" placeholder="Rental end date"/>
+	  </div>
+	  <div class="col-sm-offset-1 col-sm-3">
       <input class="distance" type="number" placeholder="Distance in km"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
+	  </div>
+	  
     </div>
-    <button id="compute">Compute</button>
+	<div class="col-sm-12">
+	<div class="col-sm-12">
+	  <label>Do you want the option ? </label>
+	  <input class="option" type="checkbox" placeholder="Deductible option"/>
+	  </div>
+      
+	      <button class="col-sm-offset-5 col-sm-2" id="compute">Compute</button>
+	  </div>
+	</div>
+	
+</form>
+
+
     <div id="actors"></div>
-    <script id="template" type="x-tmpl-mustache">
+    	<script id="template" type="x-tmpl-mustache">
       {{#actors}}
         <div class="actor">
           <span>{{who}}</span>
@@ -29,5 +107,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
     <script src="drivy.js"></script>
     <script src="index.js"></script>
-  </body>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+
+
+</body>
+
 </html>

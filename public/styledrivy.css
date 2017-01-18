@@ -1,0 +1,21 @@
+button{
+    margin: 0;
+    font: inherit;
+    color: #000;
+}
+
+#form-control{
+
+}
+
+label {
+text-align:left;
+}
+
+input{
+
+}
+
+.compute{
+text-align:center;
+}
